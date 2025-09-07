@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="businesslogo.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NAAHANI Constructions</title>
 
+  
+<!-- === CSS === -->
+
+.logO {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+  
   <!-- ===== Google Fonts ===== -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
@@ -295,14 +310,17 @@
 <body>
 
   <!-- ===== Header ===== -->
-  <header>
+ <header>
+  <div class="logo">
+    <img src="main/businesslogo.png" alt="Naahaani Logo">
     <h1>Naahaani Constructions</h1>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
   <!-- ===== Hero ===== -->
   <section class="hero">
@@ -400,4 +418,5 @@
 
 </body>
 </html>
+
 
