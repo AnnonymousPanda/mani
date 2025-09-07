@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="businesslogo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Residential Projects - Naahani Builders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      color: #222;
+    }
+    header, footer {
+      background: #222;
+      color: #fff;
+      padding: 24px 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .intro h1 {
+      font-size: 2.7rem;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+    .intro p {
+      font-size: 1.2rem;
+      color: #444;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px #0001;
+      overflow: hidden;
+      transition: transform 0.2s;
+      padding-bottom: 18px;
+    }
+    .project-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 6px 24px #0002;
+    }
+    .project-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .project-info {
+      padding: 18px 20px 0 20px;
+    }
+    .project-info h2 {
+      font-size: 1.3rem;
+      margin: 0 0 10px 0;
+      color: #1a1a1a;
+    }
+    .project-info p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .elevations, .sketches {
+      margin: 40px 0 0 0;
+    }
+    .section-title {
+      font-size: 2rem;
+      color: #181818;
+      margin-top: 64px;      /* More gap above */
+      margin-bottom: 24px;
+      font-weight: 700;      /* Bold */
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 320px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #0001;
+      background: #eee;
+    }
+    @media (max-width: 700px) {
+      .gallery img, .project-card img { width: 100%; height: 160px; }
+      .container { padding: 0 6px; }
+    }
+    .whatsapp-float {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 32px;
+  padding: 10px 22px 10px 14px;
+  box-shadow: 0 2px 12px #0002;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 999;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.whatsapp-float:hover {
+  background: #128c7e;
+  box-shadow: 0 4px 24px #0003;
+}
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+}
+.whatsapp-text {
+  display: inline-block;
+}
+@media (max-width: 600px) {
+  .whatsapp-float {
+    right: 12px;
+    bottom: 12px;
+    padding: 8px 14px 8px 10px;
+    font-size: 1rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 16px;">
+    <img src="businesslogo.png" alt="Naahani Builders Logo" style="height:48px; width:auto;">
+    <h1 style="margin: 0; font-size: 2.2rem;">Residential Projects</h1>
+  </div>
+  <a href="index.html" style="color:#ffcc00;text-decoration:none;font-size:1.1rem;">&#8592; Back to Home</a>
+</header>
+  <div class="container">
+    <div class="intro">
+      <h1>Crafting Dream Homes, One Brick at a Time</h1>
+      <p>
+        Discover our portfolio of stunning residential projects, where every detail is designed for comfort, elegance, and lasting value.<br>
+        <strong>From modern villas to cozy apartments, Naahani Builders transforms your vision into reality.</strong>
+      </p>
+    </div>
+    <div class="Front Elevations">
+      <div class="section-title">Front Elevations</div>
+      <div class="gallery">
+        <img src="images/individualh1.jpg" alt="Individual Home">
+        <img src="images/individualh2.jpeg" alt="Invidual Home">
+        <img src="images/individualh3.jpg" alt="Modern Home 3">
+        <img src="images/individualh4.jpg" alt="Modern Home 4">
+        <img src="images/individualh5.jpg" alt="Modern Home 5">
+        <img src="images/individualh6.jpg" alt="Modern Home 6">
+      </div>
+    </div>
+
+       <div class="Interiors">
+      <div class="section-title">Interiors</div>
+      <div class="gallery">
+        <img src="images/interior1.jpg" alt="Individual Home">
+        <img src="images/interior2.jpg" alt="Invidual Home">
+        <img src="images/interior3.jpg" alt="Modern Home 3">
+        <img src="images/interior4.jpg" alt="Modern Home 5">
+        <img src="images/interior5.jpg" alt="Modern Home 6">
+        <img src="images/interior6.jpg" alt="Modern Home 6">
+      </div>
+    </div>
+
+    <div class="intro" style="margin-top:40px;">
+      <h2 style="color:#1a1a1a;">Why Choose Naahani Builders?</h2>
+      <p>
+        <strong>Quality. Innovation. Trust.</strong><br>
+        We don’t just build houses—we create homes filled with warmth, style, and lasting memories.<br>
+        <span style="color:#ff9900;">Let us turn your dream home into a reality you’ll cherish for generations.</span>
+      </p>
+    </div>
+
+    <section id="our-promise" style="background:#f8f8f8; padding:48px 0;">
+  <div style="max-width:900px; margin:0 auto; padding:0 16px;">
+    <h2 style="text-align:center; font-size:2rem; color:#181818; font-weight:700; margin-bottom:32px;">
+      Our Promise to You
+    </h2>
+    <ul style="font-size:1.15rem; color:#222; line-height:1.7; list-style:none; padding:0;">
+      <li style="margin-bottom:16px;"><strong>✅ Tailor-Made Designs</strong> – We design homes to match your lifestyle, preferences, and future needs.</li>
+      <li style="margin-bottom:16px;"><strong>🏗️ Strong & Durable Construction</strong> – We use top-quality materials and trusted techniques for long-lasting homes.</li>
+      <li style="margin-bottom:16px;"><strong>🎨 Modern Architecture with Smart Planning</strong> – Spacious layouts, natural lighting, and aesthetic appeal in every design.</li>
+      <li style="margin-bottom:16px;"><strong>📍 Prime Locations</strong> – We help you build in areas that bring convenience and long-term value.</li>
+      <li style="margin-bottom:16px;"><strong>💰 Transparent Pricing</strong> – No hidden costs, no surprises — just clear, honest estimates.</li>
+      <li style="margin-bottom:16px;"><strong>👷 End-to-End Service</strong> – From planning and approvals to construction and handover, we handle everything.</li>
+      <li style="margin-bottom:16px;"><strong>🤝 Trusted Partner</strong> – Our reputation is built on timely delivery, quality work, and customer satisfaction.</li>
+      <li><strong>🌱 Future-Ready Homes</strong> – Eco-friendly practices and smart home features where possible.</li>
+    </ul>
+  </div>
+</section>
+  </div>
+  <a href="https://wa.me/918754471885?text=Hi%2C%20I%27m%20interested%20in%20your%20project"
+   class="whatsapp-float"
+   target="_blank"
+   title="Chat on WhatsApp">
+  <span class="whatsapp-icon" aria-hidden="true">
+    <!-- Official WhatsApp SVG icon -->
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <circle cx="16" cy="16" r="16" fill="#25D366"/>
+      <path d="M23.5 8.5C21.5 6.5 18.5 6.5 16.5 8.5C14.5 10.5 14.5 13.5 16.5 15.5C18.5 17.5 21.5 17.5 23.5 15.5C25.5 13.5 25.5 10.5 23.5 8.5Z" fill="white"/>
+      <path d="M16 7C11.03 7 7 11.03 7 16C7 17.39 7.37 18.7 8.03 19.85L7 25L12.15 23.97C13.3 24.63 14.61 25 16 25C20.97 25 25 20.97 25 16C25 11.03 20.97 7 16 7ZM16 23C14.82 23 13.68 22.72 12.65 22.21L12.36 22.06L9.5 22.5L9.94 19.64L9.79 19.35C9.28 18.32 9 17.18 9 16C9 12.13 12.13 9 16 9C19.87 9 23 12.13 23 16C23 19.87 19.87 23 16 23Z" fill="white"/>
+    </svg>
+  </span>
+  <span class="whatsapp-text">Chat on WhatsApp</span>
+</a>
+
+  <footer>
+    &copy; 2025 Naahani Builders. All rights reserved.
+  </footer>
+</body>
+</html>

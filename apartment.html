@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apartment Projects - Naahani Builders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="businesslogo.png">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      color: #222;
+    }
+    header, footer {
+      background: #222;
+      color: #fff;
+      padding: 24px 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .intro h1 {
+      font-size: 2.7rem;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+    .intro p {
+      font-size: 1.2rem;
+      color: #444;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px #0001;
+      overflow: hidden;
+      transition: transform 0.2s;
+      padding-bottom: 18px;
+    }
+    .project-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 6px 24px #0002;
+    }
+    .project-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .project-info {
+      padding: 18px 20px 0 20px;
+    }
+    .project-info h2 {
+      font-size: 1.3rem;
+      margin: 0 0 10px 0;
+      color: #1a1a1a;
+    }
+    .project-info p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .gallery-section {
+      margin: 40px 0 0 0;
+    }
+    .section-title {
+      font-size: 2rem;
+      color: #181818;
+      margin-top: 64px;
+      margin-bottom: 24px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 320px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #0001;
+      background: #eee;
+    }
+    #our-promise ul {
+      font-size:1.15rem; 
+      color:#222; 
+      line-height:1.7; 
+      list-style:none; 
+      padding:0;
+    }
+    #our-promise ul li {
+      margin-bottom:16px;
+    }
+    @media (max-width: 700px) {
+      .gallery img, .project-card img { width: 100%; height: 160px; }
+      .container { padding: 0 6px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 16px;">
+      <img src="businesslogo.png" alt="Naahani Builders Logo" style="height:48px; width:auto;">
+      <h1 style="margin: 0; font-size: 2.2rem;">Apartment Projects</h1>
+    </div>
+    <a href="index.html" style="color:#ffcc00;text-decoration:none;font-size:1.1rem;">&#8592; Back to Home</a>
+  </header>
+  <div class="container">
+    <div class="intro">
+      <h1>Modern Apartments for Inspired Living</h1>
+      <p>
+        Explore our collection of thoughtfully designed apartment projects, blending comfort, style, and convenience.<br>
+        <strong>Naahani Builders delivers homes that elevate your lifestyle and offer lasting value.</strong>
+      </p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="individualhome.jpg" alt="Skyline Heights">
+        <div class="project-info">
+          <h2>Sample1</h2>
+          <p>Premium 3BHK apartments with panoramic city views, rooftop amenities, and a vibrant community atmosphere.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80" alt="Urban Vista">
+        <div class="project-info">
+          <h2>sample2</h2>
+          <p>Modern 2/3 BHK homes with smart layouts, natural lighting, and all essential facilities for urban families.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80" alt="Green Residency">
+        <div class="project-info">
+          <h2>sample3</h2>
+          <p>Eco-friendly apartments surrounded by landscaped gardens, offering peace and a healthy lifestyle.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-section">
+      <div class="section-title">Gallery of Apartment Projects</div>
+      <div class="gallery">
+        <img src="images/apartment1.png" alt="Apartment Gallery 1">
+        <img src="images/apartment2.jpg" alt="Apartment Gallery 2">
+        <img src="images/apartment3.jpg" alt="Apartment Gallery 3">
+      </div>
+    </div>
+
+    <section id="our-promise" style="background:#f8f8f8; padding:48px 0; margin-top:40px;">
+      <div style="max-width:900px; margin:0 auto; padding:0 16px;">
+        <h2 style="text-align:center; font-size:2rem; color:#181818; font-weight:700; margin-bottom:32px;">
+          Our Promise to You
+        </h2>
+        <ul>
+          <li><strong>✅ Thoughtfully Designed Apartments</strong> – Smart layouts that maximize space, comfort, and natural light.</li>
+          <li><strong>🏗️ Superior Quality Construction</strong> – Built with strong materials and reliable techniques for long-lasting living.</li>
+          <li><strong>🎯 Modern Amenities</strong> – Lifts, power backup, parking, and secure spaces to enhance your lifestyle.</li>
+          <li><strong>📍 Prime City Locations</strong> – Apartments in well-connected areas near schools, hospitals, and markets.</li>
+          <li><strong>💰 Clear & Honest Pricing</strong> – Transparent cost structure with no hidden charges or surprises.</li>
+          <li><strong>👷 On-Time Delivery</strong> – We value your time and ensure timely project completion.</li>
+          <li><strong>🤝 Trusted Builder</strong> – With a proven track record, Naahani Constructions is a name you can count on.</li>
+          <li><strong>🌿 Comfort & Sustainability</strong> – Homes designed with a balance of modern living and eco-friendly practices.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Naahani Builders. All rights reserved.
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918754471885?text=Hi%2C%20I%27m%20interested%20in%20your%20project"
+     class="whatsapp-float"
+     target="_blank"
+     title="Chat on WhatsApp">
+    <span class="whatsapp-icon" aria-hidden="true">
+      <!-- Official WhatsApp SVG icon -->
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <circle cx="16" cy="16" r="16" fill="#25D366"/>
+        <path d="M23.5 8.5C21.5 6.5 18.5 6.5 16.5 8.5C14.5 10.5 14.5 13.5 16.5 15.5C18.5 17.5 21.5 17.5 23.5 15.5C25.5 13.5 25.5 10.5 23.5 8.5Z" fill="white"/>
+        <path d="M16 7C11.03 7 7 11.03 7 16C7 17.39 7.37 18.7 8.03 19.85L7 25L12.15 23.97C13.3 24.63 14.61 25 16 25C20.97 25 25 20.97 25 16C25 11.03 20.97 7 16 7ZM16 23C14.82 23 13.68 22.72 12.65 22.21L12.36 22.06L9.5 22.5L9.94 19.64L9.79 19.35C9.28 18.32 9 17.18 9 16C9 12.13 12.13 9 16 9C19.87 9 23 12.13 23 16C23 19.87 19.87 23 16 23Z" fill="white"/>
+      </svg>
+    </span>
+    <span class="whatsapp-text">Chat on WhatsApp</span>
+  </a>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      right: 32px;
+      bottom: 32px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 32px;
+      padding: 10px 22px 10px 14px;
+      box-shadow: 0 2px 12px #0002;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      text-decoration: none;
+      z-index: 999;
+      transition: box-shadow 0.2s, background 0.2s;
+    }
+    .whatsapp-float:hover {
+      background: #128c7e;
+      box-shadow: 0 4px 24px #0003;
+    }
+    .whatsapp-icon {
+      display: flex;
+      align-items: center;
+    }
+    .whatsapp-text {
+      display: inline-block;
+    }
+    @media (max-width: 600px) {
+      .whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        padding: 8px 14px 8px 10px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</body>
+</html>

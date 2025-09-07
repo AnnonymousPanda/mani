@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="businesslogo.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naahani Builders</title>
+
+  
+<!-- === CSS === -->  <!-- ===== Google Fonts ===== -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- ===== SEO Meta Tags ===== -->
+  <meta name="description" content="Naahani Builders - Building Dreams into Reality. Experts in Residential, Commercial, and Renovation projects.">
+  <meta name="keywords" content="construction, architecture, residential, commercial, renovations, Naahani Constructions">
+  <meta name="author" content="Naahani Builders">
+
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: #222;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 40px;
+      min-height: 60px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo img {
+      height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    .brand-name {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 36px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      position: relative;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero img.hero-bg {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.7;
+      z-index: -1;
+      filter: brightness(0.7);
+    }
+
+    .hero-content {
+      color: #fff;
+      max-width: 700px;
+      padding: 20px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-content h2 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      margin-bottom: 15px;
+      color: #fff;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      color: #140e0e;
+    }
+
+    .cta-btn {
+      padding: 14px 30px;
+      background: #ffcc00;
+      color: #333;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background: #e6b800;
+    }
+
+    /* ===== Sections ===== */
+    section {
+      padding: 80px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2.2rem;
+      color: #222;
+    }
+
+    /* ===== Services ===== */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .service-card .content {
+      padding: 20px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      color: #2e2e2e;
+    }
+
+    /* ===== Projects ===== */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .project-info {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 20px;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+      color: #fff;
+    }
+
+    /* ===== Contact ===== */
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 30px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form input, form textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form button {
+      padding: 14px;
+      background: #ffcc00;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #e6b800;
+    }
+
+    /* ===== WhatsApp Button ===== */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: #fff;
+      padding: 15px 22px;
+      border-radius: 40px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.05);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #1f1f1f;
+      color: #ccc;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    .socials {
+      margin-top: 15px;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: #ccc;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .socials a:hover {
+      color: #ffcc00;
+    }
+
+    /* ===== WhatsApp Floating Button ===== */
+    .whatsapp-float {
+      position: fixed;
+      right: 32px;
+      bottom: 32px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 32px;
+      padding: 10px 22px 10px 14px;
+      box-shadow: 0 2px 12px #0002;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      text-decoration: none;
+      z-index: 999;
+      transition: box-shadow 0.2s, background 0.2s;
+    }
+    .whatsapp-float:hover {
+      background: #128c7e;
+      box-shadow: 0 4px 24px #0003;
+    }
+    .whatsapp-icon {
+      display: flex;
+      align-items: center;
+    }
+    .whatsapp-text {
+      display: inline-block;
+    }
+    @media (max-width: 600px) {
+      .whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+        padding: 8px 14px 8px 10px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+<header>
+  <div class="logo">
+    <img src="businesslogo.png" alt="Naahani Builders business logo">
+    <span class="brand-name">Naahani Builders</span>
+  </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <img src="individualhome.jpg" alt="Individual Home" class="hero-bg">
+    <div class="hero-content">
+      <h2>Building Dreams, Creating Reality</h2>
+      <p>Architectural Excellence and Innovative Construction Solutions</p>
+      <a href="#contact"><button class="cta-btn">Get a Quote</button></a>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <a href="residential.html" style="text-decoration:none; color:inherit;">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Residential">
+          <div class="content">
+            <h3>Individual </h3>
+            <p>Designing and building dream homes with precision and creativity.</p>
+          </div>
+        </div>
+      </a>
+      <div class="services">
+        <a href="apartment.html" style="text-decoration:none; color:inherit;">
+        <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="Apartment">
+        <div class="content">
+          <h3>Apartment </h3>
+          <p>Modern apartments with all amenities for comfortable living.</p>
+        </div>
+      </div>
+      </a>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects">
+    <h2>Our Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" alt="Villa">
+        <div class="project-info">
+          <h3>Luxury Villa</h3>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="Apartment">
+        <div class="project-info">
+          <h3>Modern Apartments</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center">Have a project in mind? Let’s talk!</p>
+    <p style="text-align:center"><strong>Email:</strong> naahanibuilders@gmail.com | <strong>Phone:</strong> +91 918754 471885</p>
+
+    <!-- Contact Form -->
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== Why Choose Us ===== -->
+<section id="why-us" style="background:#fff; padding:48px 0;">
+  <div style="max-width:900px; margin:0 auto; padding:0 16px;">
+    <h2 style="text-align:center; font-size:2rem; color:#181818; font-weight:700; margin-bottom:32px;">
+      Why Choose Naahani Constructions?
+    </h2>
+    <ul style="font-size:1.15rem; color:#222; line-height:1.7; list-style:none; padding:0;">
+      <li style="margin-bottom:18px;">
+        <strong>✅ Complete Legal Approvals &amp; RERA Compliance</strong><br>
+        We ensure all our projects are backed by proper legal approvals and are RERA registered. This means your investment is safe, transparent, and fully compliant with government regulations.
+      </li>
+      <li style="margin-bottom:18px;">
+        <strong>🏗️ Trusted Builder with Proven Track Record</strong><br>
+        With years of experience in delivering both individual houses and modern apartments, Naahaani Constructions has earned a reputation for reliability and quality. Our satisfied customers are our biggest proof.
+      </li>
+      <li style="margin-bottom:18px;">
+        <strong>📍 Prime Location &amp; Great Connectivity</strong><br>
+        We carefully select project locations in Chennai that are close to schools, hospitals, markets, and transport hubs. When you buy with us, you not only get a home but also long-term value and convenience.
+      </li>
+      <li style="margin-bottom:18px;">
+        <strong>🏠 Superior Construction Quality &amp; Modern Amenities</strong><br>
+        Every apartment we build comes with top-class materials, strong structure, and modern designs. From spacious layouts to secure parking, power backup, and lifts – we deliver exactly what we promise.
+      </li>
+      <li>
+        <strong>💰 Transparent Pricing with No Hidden Charges</strong><br>
+        With Naahaani Constructions, what you see is what you pay. We provide a clear cost sheet upfront and ensure there are no last-minute surprises or hidden charges.
+      </li>
+    </ul>
+  </div>
+</section>
+
+  <!-- ===== WhatsApp Floating Button ===== -->
+  <a href="https://wa.me/918754471885?text=Hi%2C%20I%27m%20interested%20in%20your%20project"
+     class="whatsapp-float"
+     target="_blank"
+     title="Chat on WhatsApp">
+    <span class="whatsapp-icon" aria-hidden="true">
+      <!-- Official WhatsApp SVG icon -->
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <circle cx="16" cy="16" r="16" fill="#25D366"/>
+        <path d="M23.5 8.5C21.5 6.5 18.5 6.5 16.5 8.5C14.5 10.5 14.5 13.5 16.5 15.5C18.5 17.5 21.5 17.5 23.5 15.5C25.5 13.5 25.5 10.5 23.5 8.5Z" fill="white"/>
+        <path d="M16 7C11.03 7 7 11.03 7 16C7 17.39 7.37 18.7 8.03 19.85L7 25L12.15 23.97C13.3 24.63 14.61 25 16 25C20.97 25 25 20.97 25 16C25 11.03 20.97 7 16 7ZM16 23C14.82 23 13.68 22.72 12.65 22.21L12.36 22.06L9.5 22.5L9.94 19.64L9.79 19.35C9.28 18.32 9 17.18 9 16C9 12.13 12.13 9 16 9C19.87 9 23 12.13 23 16C23 19.87 19.87 23 16 23Z" fill="white"/>
+      </svg>
+    </span>
+    <span class="whatsapp-text">Chat on WhatsApp</span>
+  </a>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 Naahani Builders. All rights reserved.</p>
+  </footer>
+</body>
+</html>
